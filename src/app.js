@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 
 import kitchenRoute from "./kitchen/routes.js";
+import authRoute from "./auth/routes.js";
 
 const app = express();
 
@@ -37,5 +38,6 @@ app.use((req, res, next) => {
 
 // routes
 app.use("/api/kitchen", kitchenRoute);
+app.use("/api/auth", authRoute);
 
 export default app;
