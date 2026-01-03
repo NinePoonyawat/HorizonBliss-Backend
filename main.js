@@ -4,9 +4,8 @@ import app from "./src/app.js";
 config();
 const PORT = Number(process.env.PORT);
 
-if (!PORT) {
-  console.error("❌ PORT is not defined");
-  process.exit(1);
+if (!process.env.PORT) {
+  console.warn("⚠️ PORT not provided, fallback to 8000");
 }
 
 app.get("/", (req, res) => {
