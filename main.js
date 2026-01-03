@@ -1,7 +1,7 @@
 import { config } from "dotenv";
 import app from "./src/app.js";
 
-const PORT = process.env.port || 8000;
+const PORT = process.env.PORT || 8000;
 
 app.get("/", (req, res) => {
   res.send("Hello");
