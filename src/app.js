@@ -6,21 +6,21 @@ import kitchenRoute from "./kitchen/routes.js";
 const app = express();
 
 // middleware
-app.use(express.json());
+// app.use(express.json());
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:3000",
-      "https://your-site-name.netlify.app",
-      "https://horizon-bliss.netlify.app",
-    ],
-    methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
+// app.use(
+//   cors({
+//     origin: [
+//       "http://localhost:3000",
+//       "https://your-site-name.netlify.app",
+//       "https://horizon-bliss.netlify.app",
+//     ],
+//     methods: ["GET", "POST", "OPTIONS"],
+//     allowedHeaders: ["Content-Type", "Authorization"],
+//   })
+// );
 
 // routes
-app.use("/api/kitchen", kitchenRoute);
+// app.use("/api/kitchen", kitchenRoute);
 
 export default app;
