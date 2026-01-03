@@ -1,4 +1,18 @@
 import app from "./src/app.js";
+import os from "os";
+
+console.log("=== STARTUP TRACE ===");
+console.log("timestamp:", new Date().toISOString());
+console.log("process.pid:", process.pid);
+console.log("process.ppid:", process.ppid);
+console.log("node argv:", process.argv);
+console.log("npm lifecycle event:", process.env.npm_lifecycle_event || null);
+console.log("RAILWAY envs:", {
+  RAILWAY_ENV: process.env.RAILWAY_ENV,
+  RAILWAY_SERVICE_ID: process.env.RAILWAY_SERVICE_ID,
+  RAILWAY_ID: process.env.RAILWAY_ID,
+});
+console.log("=== END STARTUP TRACE ===");
 
 const PORT = process.env.PORT ? Number(process.env.PORT) : 8000;
 
