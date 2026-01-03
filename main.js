@@ -42,6 +42,6 @@ process.on("SIGTERM", () => {
   process.exit(0);
 });
 
-setInterval(() => {
-  console.log("🫀 still alive");
-}, 3000);
+// setInterval(() => {
+//   console.log("🫀 still alive");
+// }, 3000);
