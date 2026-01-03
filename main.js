@@ -1,7 +1,5 @@
-import { config } from "dotenv";
 import app from "./src/app.js";
 
-config();
 const PORT = Number(process.env.PORT);
 
 if (!process.env.PORT) {
