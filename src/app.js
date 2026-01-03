@@ -15,6 +15,8 @@ app.use(
       "https://your-site-name.netlify.app",
       "https://horizon-bliss.netlify.app",
     ],
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
