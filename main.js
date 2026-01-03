@@ -1,6 +1,6 @@
 import app from "./src/app.js";
 
-const PORT = Number(process.env.PORT);
+const PORT = process.env.PORT ? Number(process.env.PORT) : 8000;
 
 if (!process.env.PORT) {
   console.warn("⚠️ PORT not provided, fallback to 8000");
