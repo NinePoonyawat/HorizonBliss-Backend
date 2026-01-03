@@ -27,3 +27,7 @@ process.on("SIGTERM", () => {
   console.log("❌ SIGTERM received - Railway is killing the container");
   process.exit(0);
 });
+
+setInterval(() => {
+  console.log("🫀 still alive");
+}, 3000);
