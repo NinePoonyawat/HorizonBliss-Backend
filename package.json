@@ -1,15 +1,17 @@
 {
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^5.2.1"
   },
   "name": "horizonbliss-backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node main.js"
+    "start": "node main.js",
+    "dev": "nodemon main.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/NinePoonyawat/HorizonBliss-Backend/issues"
   },
-  "homepage": "https://github.com/NinePoonyawat/HorizonBliss-Backend#readme"
+  "homepage": "https://github.com/NinePoonyawat/HorizonBliss-Backend#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
 }
