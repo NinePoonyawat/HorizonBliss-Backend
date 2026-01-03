@@ -23,10 +23,6 @@ ${order.items
 💰 รวม: *${order.total} บาท*
 `;
 
-  console.log(text);
-  console.log(process.env.TELEGRAM_BOT_TOKEN);
-  console.log(process.env.TELEGRAM_CHAT_ID);
-
   await fetch(
     `${TELEGRAM_API}/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`,
     {

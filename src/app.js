@@ -8,7 +8,15 @@ const app = express();
 // middleware
 app.use(express.json());
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://your-site-name.netlify.app",
+      "https://horizon-bliss.netlify.app",
+    ],
+  })
+);
 
 // routes
 app.use("/api/kitchen", kitchenRoute);
